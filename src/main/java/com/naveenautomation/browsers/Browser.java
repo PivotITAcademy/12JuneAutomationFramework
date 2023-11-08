@@ -4,7 +4,9 @@ public enum Browser {
 
 	CHROME("Chrome"), 
 	EDGE("Edge"), 
-	FIREFOX("Firefox"), 
+	SAMSUNG_BROWSER("Samsung Browser"),
+	FIREFOX("Firefox"),
+	IE("Internet Explorer"), 
 	OPERA("Opera"),
 	SAFARI("Safari");
 
