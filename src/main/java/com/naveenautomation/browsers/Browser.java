@@ -4,6 +4,7 @@ public enum Browser {
 
 	CHROME("Chrome"), 
 	EDGE("Edge"), 
+	SAMSUNG_BROWSER("Samsung Browser"),
 	FIREFOX("Firefox"), 
 	SAFARI("Safari");
 
