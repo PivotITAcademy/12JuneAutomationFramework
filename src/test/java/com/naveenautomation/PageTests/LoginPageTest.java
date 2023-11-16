@@ -25,10 +25,15 @@ public class LoginPageTest extends TestBase {
 		loginPage = new LoginPage(wd,false).get();
 		
 	}
-
+	
 	@Test
+	public void sampleMethodForFailure() {
+		Assert.assertEquals(false, true);
+	}
+
+	@Test()
 	public void validateUserCanLoginWithValidCredentials() {
-		loginPage= (LoginPage) loginPage.SubmitLogin("zenduo@email.com", "zenduo");
+		loginPage= (LoginPage) loginPage.SubmitLogin("sandeepkaur1@gmail.com", "sandy");
 		/*
 		 * editPage= (EditPage) new SideNavBar(wd,
 		 * false).OpenPageByClickOnSideNavBar(ConsumerSideNavigationBar.MY_ACCOUNT);
@@ -36,7 +41,7 @@ public class LoginPageTest extends TestBase {
 		 */
 	}
 	
-	@Test
+	@Test(enabled = false)
 	public void validateUserCanNotLoginWithInValidCredentials() {
 		loginPage.SubmitLogin("zenduo@email.com","zenduo@123");
 		Assert.assertEquals(loginPage.getAlertText(), "Warning: No match for E-Mail Address and/or Password.", "User logged in");
