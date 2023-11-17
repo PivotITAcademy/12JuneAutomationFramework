@@ -11,6 +11,7 @@ import com.naveenautomation.base.TestBase;
 
 public class HandlingWebTables extends TestBase {
 
+	//Handling tables
 	@Test
 	public void testingWebTable() {
 		intialisation();
