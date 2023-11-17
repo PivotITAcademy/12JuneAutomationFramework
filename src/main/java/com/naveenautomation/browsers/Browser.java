@@ -8,8 +8,7 @@ public enum Browser {
 	FIREFOX("Firefox"),
 	IE("Internet Explorer"), 
 	OPERA("Opera"),
-	SAFARI("Safari"),
-	GARBAGE("hasgdsahd");
+	SAFARI("Safari")	;
 
 	String browser;
 
